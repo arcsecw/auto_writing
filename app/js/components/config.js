@@ -2,7 +2,7 @@ export const myConfig ={
     des:'站点基本信息',
     footer:'数字文化传播北京市重点实验室-内部项目-做一个一丝不苟的人^_^',
     brand:'汉语智能写作项目',
-    fetch_url:'http://10.3.129.185:3005/',
+    fetch_url:'http://211.82.97.234:3005/',
     pages:[
         {
             des:'高校工作总结',

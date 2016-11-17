@@ -71,9 +71,9 @@ var Task1  =  withRouter(React.createClass( {
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="p1"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
-                <Input type="text" label="p2"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
-                <Input type="text" label="p3"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
+                <Input type="text" label="时间"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
+                <Input type="text" label="新郎姓名"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
+                <Input type="text" label="新娘姓名"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
                 <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />

@@ -69,10 +69,10 @@ var Task1  =  withRouter(React.createClass( {
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="p1"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
-                <Input type="text" label="p2"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
-                <Input type="text" label="p3"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
-                <Input type="text" label="p4"  placeholder={this.state.parms['p4']} onChange = {(e)=>{this.state.parms['p4']=e.target.value}} validation = {this.is_good(this.state.parms['p4'])} />
+                <Input type="text" label="学校简称"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
+                <Input type="text" label="学校全称"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
+                <Input type="text" label="学校地点"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
+                <Input type="text" label="时间"  placeholder={this.state.parms['p4']} onChange = {(e)=>{this.state.parms['p4']=e.target.value}} validation = {this.is_good(this.state.parms['p4'])} />
                 <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />
@@ -108,9 +108,7 @@ class Team3 extends React.Component {
             <Tabs.Item eventKey="1" title="开学典礼">
                 <Task1  title="开学典礼"/>            
             </Tabs.Item>
-            <Tabs.Item eventKey="2" title="毕业典礼">
-                <Task2 title="毕业典礼"/>            
-            </Tabs.Item>
+            
         </Tabs>
       </Container>
     );
