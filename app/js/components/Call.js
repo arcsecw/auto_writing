@@ -1,8 +1,8 @@
 import {myConfig} from './config'
-var  url = myConfig.fetch_url
+var  u = myConfig.fetch_url
 module.exports = {
     m_get(apipath,data,cb) {
-        url = url+apipath+'?'
+        var url = u+apipath+'?'
         for (let k of Object.keys(data)){
             url = url + k + '=' + data[k]
         }
@@ -22,7 +22,7 @@ module.exports = {
 
     },
     m_post(apipath,form,cb) {
-        url = url+apipath       
+        var url = u+apipath       
         //var f = document.getElementById('myform');
         //var form = new FormData(f)
         //for (let k of Object.keys(data)){

@@ -6,26 +6,153 @@ import {
   ButtonToolbar,
   Tabs,
   Item,
+  ModalTrigger,
 } from 'amazeui-react';
+import {Editor, EditorState} from 'draft-js';
+import { withRouter } from 'react-router'
 import { myConfig } from '../components/config.js';
-class Task1 extends React.Component {
+import {post} from '../components/Call'
+import View from '../components/View'
+var Task1  =  withRouter(React.createClass( {
+    getInitialState(){
+        return {
+                parms:{
+                keywords:'学生,思想',
+                },
+                form_data:{},
+                showModal: false,
+            }
+  },
+   close() {
+    this.setState({showModal: false,form_data:{}});
+  },
+  open() {
+    this.setState({showModal: true});
+  },
+  is_good(str){
+      if(str==undefined){
+          return 'error'
+      }      
+      if(str.length>0){
+          return 'success'
+      }
+      return 'error'
+  },
+  validation_all(){
+        var a = this.state.parms
+        for (let k in a ){
+            if(this.is_good(a[k])=='error'){
+                return false
+            }
+        }
+        return true
+    },
+    handle_submit(e){
+        e.preventDefault();
+        if (this.validation_all()){
+            var form1 = new FormData()
+            for(let k in this.state.parms){
+                form1.append(k,this.state.parms[k])
+            }
+            this.setState({form_data:form1},()=>{
+                this.open()
+            })
+        }else{
+            this.forceUpdate()
+        }
+    },
     render() {
+        
         return (
-            <div>
-          置身人群中<br />你只需要被淹没 享受 沉默<br />退到人群后<br />你只需给予双手 微笑 等候
-            </div>
+                <Container>
+                <form className="am-form" id = 'myform'>
+                <Input type="text" label="keywords"  placeholder={this.state.parms['keywords']} onChange = {(e)=>{this.state.parms['keywords']=e.target.value}} validation = {this.is_good(this.state.parms['keywords'])} />
+                <ButtonToolbar>
+                    <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
+                    <Input type="reset" value="重置" amStyle="danger" standalone />
+                </ButtonToolbar>
+                </form>
+                
+                <ModalTrigger
+                modal={<View api_path='zj' form_data = {this.state.form_data} start_run = {this.state.showModal} title = {this.props.title}/>}
+                show={this.state.showModal}
+                onClose={this.close}
+                />
+                </Container>
         )
     }
-}
-class Task2 extends React.Component {
+})
+)
+var Task2  =  withRouter(React.createClass( {
+    getInitialState(){
+        return {
+                parms:{
+                keywords:'组织',
+                },
+                form_data:{},
+                showModal: false,
+            }
+  },
+   close() {
+    this.setState({showModal: false,form_data:{}});
+  },
+  open() {
+    this.setState({showModal: true});
+  },
+  is_good(str){
+      if(str==undefined){
+          return 'error'
+      }      
+      if(str.length>0){
+          return 'success'
+      }
+      return 'error'
+  },
+  validation_all(){
+        var a = this.state.parms
+        for (let k in a ){
+            if(this.is_good(a[k])=='error'){
+                return false
+            }
+        }
+        return true
+    },
+    handle_submit(e){
+        e.preventDefault();
+        if (this.validation_all()){
+            var form1 = new FormData()
+            for(let k in this.state.parms){
+                form1.append(k,this.state.parms[k])
+            }
+            this.setState({form_data:form1},()=>{
+                this.open()
+            })
+        }else{
+            this.forceUpdate()
+        }
+    },
     render() {
+        
         return (
-            <div>
-                走在忠孝东路<br />徘徊在茫然中<br />在我的人生旅途<br />选择了多少错误<br />我在睡梦中惊醒<br />感叹悔言无尽<br />恨我不能说服自己<br />接受一切教训<br />让生命去等候<br />等候下一个漂流<br />让生命去等候<br />等候下一个伤口
-            </div>
+                <Container>
+                <form className="am-form" id = 'myform'>
+                <Input type="text" label="keywords"  placeholder={this.state.parms['keywords']} onChange = {(e)=>{this.state.parms['keywords']=e.target.value}} validation = {this.is_good(this.state.parms['keywords'])} />
+                <ButtonToolbar>
+                    <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
+                    <Input type="reset" value="重置" amStyle="danger" standalone />
+                </ButtonToolbar>
+                </form>
+                
+                <ModalTrigger
+                modal={<View api_path='zj1' form_data = {this.state.form_data} start_run = {this.state.showModal} title = {this.props.title}/>}
+                show={this.state.showModal}
+                onClose={this.close}
+                />
+                </Container>
         )
     }
-}
+})
+)
 
 class Team1 extends React.Component {
   render() {
@@ -34,10 +161,10 @@ class Team1 extends React.Component {
         <h2>{myConfig.pages[0].des}</h2>      
         <Tabs animation = 'slide'>
             <Tabs.Item eventKey="1" title="个人工作总结">
-                <Task1/>
+                <Task1 title="个人工作总结"/>
             </Tabs.Item>
             <Tabs.Item eventKey="2" title="部门工作总结">
-                <Task2/>                
+                <Task2 title="部门工作总结"/>                
             </Tabs.Item>
         </Tabs>
       </Container>

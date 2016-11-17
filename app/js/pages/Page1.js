@@ -12,6 +12,7 @@ import Team1 from './Team1'
 import Team2 from './Team2'
 import Team3 from './Team3'
 import Team4 from './Team4'
+import Test from './Test'
 class Page1 extends React.Component {
   render() {
     var team_id = this.props.location.query.team
@@ -25,7 +26,7 @@ class Page1 extends React.Component {
       case '4':
         return <Team4/>
       default:
-      return (<Container><h1>this team not defined yet </h1></Container>)
+      return (<Test title = 'test'/>)
     }
   }
 }

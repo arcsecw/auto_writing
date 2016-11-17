@@ -12,11 +12,14 @@ class RichEditorExample extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = {editorState: EditorState.createEmpty()};
+    this.state = {editorState: EditorState.createWithContent(ContentState.createFromText(this.props.tre))};
 
     this.focus = () => this.refs.editor.focus();
-    this.onChange = (editorState) => this.setState({editorState});
-
+    //this.onChange = (editorState) => this.setState({editorState});
+    this.onChange = (editorState)=>{
+      this.setState({editorState})
+      console.log(editorState)
+    }
     this.handleKeyCommand = (command) => this._handleKeyCommand(command);
     this.onTab = (e) => this._onTab(e);
     this.toggleBlockType = (type) => this._toggleBlockType(type);
@@ -87,6 +90,7 @@ class RichEditorExample extends React.Component {
             onChange={this.onChange}
             onTab={this.onTab}
             placeholder={this.props.tre}
+
             ref="editor"
             spellCheck={true}
           />
@@ -217,7 +221,7 @@ var View = React.createClass({
   },
   render: function() {
     var type = this.state.loading?"loading":"popup"
-    var title = "结果编辑器"
+    var title = this.props.title?this.props.title:"结果编辑器"
     var content = this.state.loading?"":
     <RichEditorExample tre = {this.state.tre}/>
     return (
