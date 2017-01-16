@@ -13,159 +13,49 @@ import { withRouter } from 'react-router'
 import { myConfig } from '../components/config.js';
 import {post} from '../components/Call'
 import View from '../components/View'
-var Task1  =  withRouter(React.createClass( {
-    getInitialState(){
-        return {
-                parms:{
-                keywords:'学生,思想',
-                },
-                form_data:{},
-                showModal: false,
-            }
-  },
-   close() {
-    this.setState({showModal: false,form_data:{}});
-  },
-  open() {
-    this.setState({showModal: true});
-  },
-  is_good(str){
-      if(str==undefined){
-          return 'error'
-      }      
-      if(str.length>0){
-          return 'success'
-      }
-      return 'error'
-  },
-  validation_all(){
-        var a = this.state.parms
-        for (let k in a ){
-            if(this.is_good(a[k])=='error'){
-                return false
-            }
-        }
-        return true
-    },
-    handle_submit(e){
-        e.preventDefault();
-        if (this.validation_all()){
-            var form1 = new FormData()
-            for(let k in this.state.parms){
-                form1.append(k,this.state.parms[k])
-            }
-            this.setState({form_data:form1},()=>{
-                this.open()
-            })
-        }else{
-            this.forceUpdate()
-        }
-    },
-    render() {
-        
-        return (
-                <Container>
-                <form className="am-form" id = 'myform'>
-                <Input type="text" label="keywords"  placeholder={this.state.parms['keywords']} onChange = {(e)=>{this.state.parms['keywords']=e.target.value}} validation = {this.is_good(this.state.parms['keywords'])} />
-                <ButtonToolbar>
-                    <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
-                    <Input type="reset" value="重置" amStyle="danger" standalone />
-                </ButtonToolbar>
-                </form>
-                
-                <ModalTrigger
-                modal={<View api_path='zj' form_data = {this.state.form_data} start_run = {this.state.showModal} title = {this.props.title}/>}
-                show={this.state.showModal}
-                onClose={this.close}
-                />
-                </Container>
-        )
-    }
-})
-)
-var Task2  =  withRouter(React.createClass( {
-    getInitialState(){
-        return {
-                parms:{
-                keywords:'组织',
-                },
-                form_data:{},
-                showModal: false,
-            }
-  },
-   close() {
-    this.setState({showModal: false,form_data:{}});
-  },
-  open() {
-    this.setState({showModal: true});
-  },
-  is_good(str){
-      if(str==undefined){
-          return 'error'
-      }      
-      if(str.length>0){
-          return 'success'
-      }
-      return 'error'
-  },
-  validation_all(){
-        var a = this.state.parms
-        for (let k in a ){
-            if(this.is_good(a[k])=='error'){
-                return false
-            }
-        }
-        return true
-    },
-    handle_submit(e){
-        e.preventDefault();
-        if (this.validation_all()){
-            var form1 = new FormData()
-            for(let k in this.state.parms){
-                form1.append(k,this.state.parms[k])
-            }
-            this.setState({form_data:form1},()=>{
-                this.open()
-            })
-        }else{
-            this.forceUpdate()
-        }
-    },
-    render() {
-        
-        return (
-                <Container>
-                <form className="am-form" id = 'myform'>
-                <Input type="text" label="keywords"  placeholder={this.state.parms['keywords']} onChange = {(e)=>{this.state.parms['keywords']=e.target.value}} validation = {this.is_good(this.state.parms['keywords'])} />
-                <ButtonToolbar>
-                    <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
-                    <Input type="reset" value="重置" amStyle="danger" standalone />
-                </ButtonToolbar>
-                </form>
-                
-                <ModalTrigger
-                modal={<View api_path='zj1' form_data = {this.state.form_data} start_run = {this.state.showModal} title = {this.props.title}/>}
-                show={this.state.showModal}
-                onClose={this.close}
-                />
-                </Container>
-        )
-    }
-})
-)
-
+import Kai_xue_dian_li from './Kai_xue_dian_li'
+import Bi_ye_dian_li from './Bi_ye_dian_li'
+import Ge_ren_zong_jie from './Ge_ren_zong_jie'
+import Bu_men_zong_jie from './Bu_men_zong_jie'
+import Qing_jia_tiao from './Qing_jia_tiao'
+import Ju_hui from './Ju_hui'
+import Qiu_zhi_xin from './Qiu_zhi_xin'
+import Hui_yi_tong_zhi from './Hui_yi_tong_zhi'
+import Dian_li_yao_qing from './Dian_li_yao_qing'
 class Team1 extends React.Component {
   render() {
     return(
       <Container className="am-padding-vertical-lg">
         <h2>{myConfig.pages[0].des}</h2>      
         <Tabs animation = 'slide'>
-            <Tabs.Item eventKey="1" title="个人工作总结">
-                <Task1 title="个人工作总结"/>
+            <Tabs.Item eventKey="1" title="开学典礼">
+                <Kai_xue_dian_li  title="开学典礼"/>
             </Tabs.Item>
-            <Tabs.Item eventKey="2" title="部门工作总结">
-                <Task2 title="部门工作总结"/>                
+            <Tabs.Item eventKey="2" title="毕业典礼">
+                <Bi_ye_dian_li  title="毕业典礼"/>
             </Tabs.Item>
+            <Tabs.Item eventKey="3" title="个人总结">
+                <Ge_ren_zong_jie  title="个人总结"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="4" title="部门总结">
+                <Bu_men_zong_jie  title="部门总结"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="5" title="请假条">
+                <Qing_jia_tiao  title="请假条"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="6" title="同学聚会">
+                <Ju_hui  title="同学聚会"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="7" title="求职信">
+                <Qiu_zhi_xin  title="求职信"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="8" title="会议通知">
+                <Hui_yi_tong_zhi  title="会议通知"/>
+            </Tabs.Item>
+            <Tabs.Item eventKey="9" title="毕业典礼">
+                <Dian_li_yao_qing  title="毕业典礼"/>
+            </Tabs.Item>
+            
         </Tabs>
       </Container>
     )

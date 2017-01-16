@@ -10,8 +10,6 @@ import {
 import { myConfig } from '../components/config.js';
 import Team1 from './Team1'
 import Team2 from './Team2'
-import Team3 from './Team3'
-import Team4 from './Team4'
 import Test from './Test'
 class Page1 extends React.Component {
   render() {
@@ -21,10 +19,6 @@ class Page1 extends React.Component {
         return <Team1/>
       case '2':
         return <Team2/>
-      case '3':
-        return <Team3/>
-      case '4':
-        return <Team4/>
       default:
       return (<Test title = 'test'/>)
     }

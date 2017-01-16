@@ -34,8 +34,9 @@ class App extends Component {
           brand={myConfig.brand}
           brandLink="/"
           inverse
+          toggleNavKey="nav"
         >
-          <CollapsibleNav>
+          <CollapsibleNav eventKey="nav">
             <Nav topbar>
               {routeLinks}
             </Nav>
