@@ -22,14 +22,14 @@ var Hui_yi_tong_zhi  =  withRouter(React.createClass( {
                 parms:{
                 p1:'党员发展大会',
                 p2:'全体党员',
-                p3:'2016-11-15 09:00',
+                p3:'2016-10-1',
                 p4:'评选党员积极分子',
                 p5:'通过前几周的学习和考核评选出积极分子',
                 p6:'党支部书记,副书记及全体学生党员',
                 p7:'教三六阶',
                 p8:'请大家带好笔和本做好笔记',
                 p9:'计算机院办',
-                p10:'2016-11-10 10:00',
+                p10:'2016-10-7',
                 type:'Notice',
                 },
                 form_data:{},
@@ -72,21 +72,24 @@ var Hui_yi_tong_zhi  =  withRouter(React.createClass( {
         }
     },
     render() {
-        
+        var parms = this.state.parms
+        var iconUser = <span className="am-icon-user"></span>;
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="会议名称"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
-                <Input type="text" label="会议通知对象"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
-                <Input type="text" label="会议召开日期"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
-                <Input type="text" label="会议议题或主题"  placeholder={this.state.parms['p4']} onChange = {(e)=>{this.state.parms['p4']=e.target.value}} validation = {this.is_good(this.state.parms['p4'])} />
-                <Input type="text" label="会议主要内容"  placeholder={this.state.parms['p5']} onChange = {(e)=>{this.state.parms['p5']=e.target.value}} validation = {this.is_good(this.state.parms['p5'])} />
-                <Input type="text" label="参会人员列表"  placeholder={this.state.parms['p6']} onChange = {(e)=>{this.state.parms['p6']=e.target.value}} validation = {this.is_good(this.state.parms['p6'])} />
-                <Input type="text" label="会议地点"  placeholder={this.state.parms['p7']} onChange = {(e)=>{this.state.parms['p7']=e.target.value}} validation = {this.is_good(this.state.parms['p7'])} />
-                <Input type="text" label="注意事项"  placeholder={this.state.parms['p8']} onChange = {(e)=>{this.state.parms['p8']=e.target.value}} validation = {this.is_good(this.state.parms['p8'])} />
-                <Input type="text" label="会议发布机构"  placeholder={this.state.parms['p9']} onChange = {(e)=>{this.state.parms['p9']=e.target.value}} validation = {this.is_good(this.state.parms['p9'])} />
-                <Input type="text" label="会议发布日期" placeholder={this.state.parms['p10']} onChange = {(e)=>{this.state.parms['p10']=e.target.value}} validation = {this.is_good(this.state.parms['p10'])} />
-                <ButtonToolbar>
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议名称" inline  defaultValue={parms.p1}  onChange = {(e)=>{parms.p1 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p1)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议通知对象" inline  defaultValue={parms.p2}  onChange = {(e)=>{parms.p2 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p2)} />
+                <DateTimeInput validation = {this.is_good(parms.p3)}format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p3} onSelect={(e)=>{parms['p3'] = e ;this.setState({parms:parms})}}/>
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议议题或主题" inline  defaultValue={parms.p4}  onChange = {(e)=>{parms.p4 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议主要内容" inline  defaultValue={parms.p5}  onChange = {(e)=>{parms.p5 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p5)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="参会人员列表" inline  defaultValue={parms.p6}  onChange = {(e)=>{parms.p6 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p6)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议地点" inline  defaultValue={parms.p7}  onChange = {(e)=>{parms.p7 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p7)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="注意事项" inline  defaultValue={parms.p8}  onChange = {(e)=>{parms.p8 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p8)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议发布机构" inline  defaultValue={parms.p9}  onChange = {(e)=>{parms.p9 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p9)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议发布日期" inline  defaultValue={parms.p10}  onChange = {(e)=>{parms.p10 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p10)} />
+                <DateTimeInput validation = {this.is_good(parms.p10)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p10} onSelect={(e)=>{parms['p10'] = e ;this.setState({parms:parms})}}/>
+                
+                 <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />
                 </ButtonToolbar>

@@ -19,7 +19,6 @@ import Ge_ren_zong_jie from './Ge_ren_zong_jie'
 import Bu_men_zong_jie from './Bu_men_zong_jie'
 import Qing_jia_tiao from './Qing_jia_tiao'
 import Ju_hui from './Ju_hui'
-import Qiu_zhi_xin from './Qiu_zhi_xin'
 import Hui_yi_tong_zhi from './Hui_yi_tong_zhi'
 import Dian_li_yao_qing from './Dian_li_yao_qing'
 class Team1 extends React.Component {
@@ -46,14 +45,11 @@ class Team1 extends React.Component {
             <Tabs.Item eventKey="6" title="同学聚会">
                 <Ju_hui  title="同学聚会"/>
             </Tabs.Item>
-            <Tabs.Item eventKey="7" title="求职信">
-                <Qiu_zhi_xin  title="求职信"/>
-            </Tabs.Item>
             <Tabs.Item eventKey="8" title="会议通知">
                 <Hui_yi_tong_zhi  title="会议通知"/>
             </Tabs.Item>
-            <Tabs.Item eventKey="9" title="毕业典礼">
-                <Dian_li_yao_qing  title="毕业典礼"/>
+            <Tabs.Item eventKey="9" title="典礼邀请">
+                <Dian_li_yao_qing  title="典礼邀请"/>
             </Tabs.Item>
             
         </Tabs>

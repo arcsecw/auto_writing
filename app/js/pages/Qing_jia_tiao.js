@@ -82,9 +82,9 @@ var Qing_jia_tiao  =  withRouter(React.createClass( {
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="请假开始时间" dateTime= {parms.p3} onSelect={(e)=>{parms['p3'] = e ;this.setState({parms:parms})}}/>
-                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="请假结束时间" dateTime={parms.p4} onSelect={(e)=>{parms['p4'] = e ;this.setState({parms:parms})}}/>
-                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="落款日期" dateTime={parms.p7} onSelect={(e)=>{parms['p7'] = e ;this.setState({parms:parms})}}/>
+                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="请假开始时间" dateTime= {parms.p3} onSelect={(e)=>{parms['p3'] = e ;this.setState({parms:parms})}} validation = {this.is_good(parms.p3)}/>
+                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="请假结束时间" dateTime={parms.p4} onSelect={(e)=>{parms['p4'] = e ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)}/>
+                <DateTimeInput format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="落款日期" dateTime={parms.p7} onSelect={(e)=>{parms['p7'] = e ;this.setState({parms:parms})}}validation = {this.is_good(parms.p7)} />
                 <Input type="text" addonBefore={iconUser} addonAfter='必填' label="你如何称呼领导？"  defaultValue={parms['p1']} onChange = {(e)=>{parms['p1']=e.target.value; this.setState({parms:parms})}} validation = {this.is_good(this.state.parms['p1'])} />
                 <Input type="text" addonBefore={iconUser} addonAfter='必填' label="请假原因"  defaultValue={parms['p2']} onChange = {(e)=>{parms['p2']=e.target.value; this.setState({parms:parms})}} validation = {this.is_good(parms['p2'])} />
                 <Input type="text" addonBefore={iconUser} addonAfter='必填' label="请假人"  defaultValue={parms['p6']} onChange = {(e)=>{parms['p6']=e.target.value; this.setState({parms:parms})}} validation = {this.is_good(parms['p6'])} />

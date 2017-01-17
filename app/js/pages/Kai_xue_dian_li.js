@@ -10,6 +10,7 @@ import {
   Tabs,
   Item,
   ModalTrigger,
+  DateTimeInput,
 } from 'amazeui-react';
 import {Editor, EditorState} from 'draft-js';
 import { withRouter } from 'react-router'
@@ -20,10 +21,14 @@ var Kai_xue_dian_li  =  withRouter(React.createClass( {
     getInitialState(){
         return {
                 parms:{
-                p1:'北信科',
+                p1:'北信科',  
                 p2:'北京信息科技大学',
                 p3:'北京',
                 p4:'上午',
+                p5:'2016-10-1',
+                p6:'刘备',
+                p7:'本校办学历史悠久...',
+                p8:'秋天',
                 },
                 form_data:{},
                 showModal: false,
@@ -68,14 +73,19 @@ var Kai_xue_dian_li  =  withRouter(React.createClass( {
         }
     },
     render() {
-        
+         var parms = this.state.parms
+        var iconUser = <span className="am-icon-user"></span>;
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="学校简称"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
-                <Input type="text" label="学校全称"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
-                <Input type="text" label="学校地点"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
-                <Input type="text" label="时间"  placeholder={this.state.parms['p4']} onChange = {(e)=>{this.state.parms['p4']=e.target.value}} validation = {this.is_good(this.state.parms['p4'])} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学校简称" inline  defaultValue={parms.p1}  onChange = {(e)=>{parms.p1 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p1)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学校全称" inline  defaultValue={parms.p2}  onChange = {(e)=>{parms.p2 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p2)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学校地点" inline  defaultValue={parms.p3}  onChange = {(e)=>{parms.p3 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p3)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="时间" inline  defaultValue={parms.p4}  onChange = {(e)=>{parms.p4 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)} />
+                <DateTimeInput  validation = {this.is_good(parms.p5)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="典礼日期" dateTime= {parms.p5} onSelect={(e)=>{parms['p5'] = e ;this.setState({parms:parms})}}/>
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="参会领导" inline  defaultValue={parms.p6}  onChange = {(e)=>{parms.p6 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p6)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学校简介" inline  defaultValue={parms.p7}  onChange = {(e)=>{parms.p7 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p7)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="典礼季节" inline  defaultValue={parms.p8}  onChange = {(e)=>{parms.p8 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p8)} />
                 <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />

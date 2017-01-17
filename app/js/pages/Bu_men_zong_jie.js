@@ -17,7 +17,10 @@ var Bu_men_zong_jie  =  withRouter(React.createClass( {
     getInitialState(){
         return {
                 parms:{
-                keywords:'组织',
+                p1:'语文教研室',
+                p2:'办公室主任',
+                p3:'计算机科学与技术',
+                p4:'张强',
                 },
                 form_data:{},
                 showModal: false,
@@ -49,11 +52,14 @@ var Bu_men_zong_jie  =  withRouter(React.createClass( {
     },
     handle_submit(e){
         e.preventDefault();
+        var keywords=''
         if (this.validation_all()){
             var form1 = new FormData()
             for(let k in this.state.parms){
-                form1.append(k,this.state.parms[k])
+                keywords = keywords+this.state.parms[k]+','
             }
+            console.log(keywords)
+            form1.append('keywords',keywords)            
             this.setState({form_data:form1},()=>{
                 this.open()
             })
@@ -62,11 +68,16 @@ var Bu_men_zong_jie  =  withRouter(React.createClass( {
         }
     },
     render() {
-        
+        var parms = this.state.parms
+        var iconUser = <span className="am-icon-user"></span>;
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="keywords"  placeholder={this.state.parms['keywords']} onChange = {(e)=>{this.state.parms['keywords']=e.target.value}} validation = {this.is_good(this.state.parms['keywords'])} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="部门名称" inline  defaultValue={parms.p1}  onChange = {(e)=>{parms.p1 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p1)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="身份" inline  defaultValue={parms.p2}  onChange = {(e)=>{parms.p2 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p2)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学院" inline  defaultValue={parms.p3}  onChange = {(e)=>{parms.p3 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p3)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="姓名" inline  defaultValue={parms.p4}  onChange = {(e)=>{parms.p4 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)} />
+                
                 <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />

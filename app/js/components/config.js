@@ -12,8 +12,4 @@ export const myConfig ={
             des:'日用文书智能写作',
             teamid:'2',
         },
-        {
-            des:'测试页面',
-            teamid:'3',
-        },
     ]};

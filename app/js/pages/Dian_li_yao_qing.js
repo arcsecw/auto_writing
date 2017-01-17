@@ -21,7 +21,7 @@ var Dian_li_yao_qing  =  withRouter(React.createClass( {
         return {
                 parms:{
                 p1:'北京信息科技大学',
-                p2:'2016-11-15 09:00',
+                p2:'2016-11-15',
                 p3:'报告厅',
                 p4:'计算机学院',
                 type:'Ceremony',
@@ -66,15 +66,16 @@ var Dian_li_yao_qing  =  withRouter(React.createClass( {
         }
     },
     render() {
-        
+        var parms = this.state.parms
+        var iconUser = <span className="am-icon-user"></span>;
         return (
                 <Container>
                 <form className="am-form" id = 'myform'>
-                <Input type="text" label="学校名称"  placeholder={this.state.parms['p1']} onChange = {(e)=>{this.state.parms['p1']=e.target.value}} validation = {this.is_good(this.state.parms['p1'])} />
-                <Input type="text" label="毕业典礼时间"  placeholder={this.state.parms['p2']} onChange = {(e)=>{this.state.parms['p2']=e.target.value}} validation = {this.is_good(this.state.parms['p2'])} />
-                <Input type="text" label="毕业典礼地点"  placeholder={this.state.parms['p3']} onChange = {(e)=>{this.state.parms['p3']=e.target.value}} validation = {this.is_good(this.state.parms['p3'])} />
-                <Input type="text" label="落款"  placeholder={this.state.parms['p4']} onChange = {(e)=>{this.state.parms['p4']=e.target.value}} validation = {this.is_good(this.state.parms['p4'])} />
-                <ButtonToolbar>
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="学校名称" inline  defaultValue={parms.p1}  onChange = {(e)=>{parms.p1 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p1)} />
+                <DateTimeInput validation = {this.is_good(parms.p2)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p2} onSelect={(e)=>{parms['p2'] = e ;this.setState({parms:parms})}}/>
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="毕业典礼地点" inline  defaultValue={parms.p3}  onChange = {(e)=>{parms.p3 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p3)} />
+                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="落款" inline  defaultValue={parms.p4}  onChange = {(e)=>{parms.p4 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)} />
+               <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />
                     <Input type="reset" value="重置" amStyle="danger" standalone />
                 </ButtonToolbar>
