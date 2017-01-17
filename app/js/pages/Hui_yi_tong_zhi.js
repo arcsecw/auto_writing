@@ -86,8 +86,7 @@ var Hui_yi_tong_zhi  =  withRouter(React.createClass( {
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议地点" inline  defaultValue={parms.p7}  onChange = {(e)=>{parms.p7 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p7)} />
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="注意事项" inline  defaultValue={parms.p8}  onChange = {(e)=>{parms.p8 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p8)} />
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议发布机构" inline  defaultValue={parms.p9}  onChange = {(e)=>{parms.p9 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p9)} />
-                <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="会议发布日期" inline  defaultValue={parms.p10}  onChange = {(e)=>{parms.p10 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p10)} />
-                <DateTimeInput validation = {this.is_good(parms.p10)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p10} onSelect={(e)=>{parms['p10'] = e ;this.setState({parms:parms})}}/>
+                <DateTimeInput validation = {this.is_good(parms.p10)}format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p10} onSelect={(e)=>{parms['10'] = e ;this.setState({parms:parms})}}/>                
                 
                  <ButtonToolbar>
                     <Input  type = "submit" value="提交" standalone onClick={this.handle_submit} />

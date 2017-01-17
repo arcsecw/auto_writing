@@ -20,12 +20,12 @@ var Qing_jia_tiao  =  withRouter(React.createClass( {
     getInitialState(){
         return {
                 parms:{
-                p1:'苗琳',
+                p1:'刘禅',
                 p2:'高烧不退',
                 p3:'2016-10-1',
                 p4:'2016-10-7',
                 p5:'7',
-                p6:'小茴香',
+                p6:'诸葛亮',
                 p7:'2016-9-30',
                 type:'Qjt',
                 },

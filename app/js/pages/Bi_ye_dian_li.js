@@ -24,7 +24,7 @@ var Bi_ye_dian_li  =  withRouter(React.createClass( {
                 p3:'北京',
                 p4:'上午',
                 p5:'2016-10-1',
-                p6:'张三',
+                p6:'刘备',
                 p7:'本校办学历史悠久...',
                 p8:'秋天',
                 },

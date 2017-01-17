@@ -131,7 +131,7 @@ var Hun_li_he_ci  =  withRouter(React.createClass( {
         <FormGroup>
                     <label>你是哪一方的？</label>
                     <Input type="radio" name="which_fang" label="新郎方" inline onClick = {(e)=>{parms.which_fang = '新郎方' ;this.setState({parms:parms})}} />
-                    <Input type="radio" name="which_fang" label="新娘方" inline onClick = {(e)=>{parms.which_fang = '新娘方' ;this.setState({parms:parms})}}/>
+                    <Input type="radio" name="which_fang" label="新娘方" inline onClick = {(e)=>{parms.which_fang = '新娘方' ;this.setState({parms:parms})}}checked="checked"/>
         </FormGroup>
         <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label = {lable1} inline  defaultValue={parms.guanxi}  onChange = {(e)=>{parms.guanxi = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.guanxi)} />        
         </div>
@@ -141,7 +141,7 @@ var Hun_li_he_ci  =  withRouter(React.createClass( {
                 <br/>
                 <FormGroup>
                     <label>你的身份是？</label>
-                    <Input type="radio" name="xingbie" label="领导" inline onClick = {(e)=>{parms.shenfen = '领导' ;this.setState({parms:parms})}}/>
+                    <Input type="radio" name="xingbie" label="领导" inline onClick = {(e)=>{parms.shenfen = '领导' ;this.setState({parms:parms})}} checked="checked"/>
                     <Input type="radio" name="xingbie" label="父母" inline onClick = {(e)=>{parms.shenfen = '父母' ;this.setState({parms:parms})}}/>
                     <Input type="radio" name="xingbie" label="朋友" inline onClick = {(e)=>{parms.shenfen = '朋友' ;this.setState({parms:parms})}}/>
                     <Input type="radio" name="xingbie" label="新郎" inline onClick = {(e)=>{parms.shenfen = '新郎' ;this.setState({parms:parms})}}/>

@@ -23,14 +23,14 @@ var Qiu_zhi_xin  =  withRouter(React.createClass( {
         return {
                 parms:{
                 p1:'程序员',
-                p2:'bingham',
-                p3:'北京信息科技大学',
-                p4:'计算机应用技术',
-                p5:'NLP',
-                p6:'熟练掌握机器学习算法',
+                p2:'马云',
+                p3:'杭州师范大学',
+                p4:'英语',
+                p5:'英语,数学,外语',
+                p6:'熟练掌握数据结构与算法',
                 p7:'英语六级',
-                p8:'联想集团',
-                p9:'开发测试工程师',
+                p8:'阿里巴巴集团',
+                p9:'测试开发',
                 p10:'在实习过程中不断认识自我修正自我',
                 p11:'工作富有责任心',
                 type:'CoverLetter',
@@ -85,7 +85,7 @@ var Qiu_zhi_xin  =  withRouter(React.createClass( {
                     <label>您的英语等级？</label>
         
                     <Input type="radio" name="xingbie" label="CET四级" inline onClick = {(e)=>{parms.p7 = '四级' ;this.setState({parms:parms})}}/>
-                    <Input type="radio" name="xingbie" label="CET六级" inline onClick = {(e)=>{parms.p7 = '六级' ;this.setState({parms:parms})}} />
+                    <Input type="radio" name="xingbie" label="CET六级" inline onClick = {(e)=>{parms.p7 = '六级' ;this.setState({parms:parms})}} checked="checked" />
                 </FormGroup>
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" label="你申请的职位？"  defaultValue={parms['p1']} onChange = {(e)=>{parms['p1']=e.target.value ; this.setState({parms:parms})}} validation = {this.is_good(this.state.parms['p1'])} />
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" label="你的姓名？"  defaultValue={parms['p2']} onChange = {(e)=>{parms['p2']=e.target.value ; this.setState({parms:parms}) }} validation = {this.is_good(this.state.parms['p2'])} />

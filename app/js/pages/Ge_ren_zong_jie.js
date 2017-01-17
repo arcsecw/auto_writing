@@ -21,7 +21,7 @@ var Ge_ren_zong_jie  =  withRouter(React.createClass( {
                 p2:'教师',
                 p3:'计算机科学与技术',
                 p4:'数据结构',
-                p5:'王强',
+                p5:'诸葛亮',
                 },
                 form_data:{},
                 showModal: false,

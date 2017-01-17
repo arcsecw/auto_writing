@@ -72,7 +72,7 @@ var Ju_hui  =  withRouter(React.createClass( {
                 <Container>
                 <form className="am-form" id = 'myform'>
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="毕业周年" inline  defaultValue={parms.p1}  onChange = {(e)=>{parms.p1 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p1)} />
-                <DateTimeInput validation = {this.is_good(parms.p2)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="会议召开日期" dateTime= {parms.p2} onSelect={(e)=>{parms['p2'] = e ;this.setState({parms:parms})}}/>
+                <DateTimeInput validation = {this.is_good(parms.p2)} format="YYYY-MM-DD" addonBefore={iconUser} addonAfter='必填' label="聚会时间" dateTime= {parms.p2} onSelect={(e)=>{parms['p2'] = e ;this.setState({parms:parms})}}/>
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="聚会地点" inline  defaultValue={parms.p3}  onChange = {(e)=>{parms.p3 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p3)} />
                 <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label ="落款" inline  defaultValue={parms.p4}  onChange = {(e)=>{parms.p4 = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.p4)} />
                 <ButtonToolbar>
