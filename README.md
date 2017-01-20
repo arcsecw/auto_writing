@@ -1,3 +1,4 @@
+hehe
 # 用amaze ui 库做的一个小项目-初学者可以参考一下
 ## 用到的东西
 amazeui的form modal 相关组件 react restful react-router draft-js 
