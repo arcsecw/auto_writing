@@ -39,14 +39,7 @@ const paths = {
   }
 };
 
-// JavaScript 格式校验
-gulp.task('eslint', function() {
-  return gulp.src('app/js/**/*.js')
-    .pipe(reload({stream: true, once: true}))
-    .pipe($.eslint())
-    .pipe($.eslint.format());
-  // .pipe($.eslint.failOnError());
-});
+
 
 // 图片优化
 gulp.task('images', function() {
@@ -153,7 +146,7 @@ gulp.task('clean', function() {
 
 // 构建任务
 gulp.task('build', function(cb) {
-  runSequence('clean', ['styles', 'eslint', 'html', 'images', 'copy', 'browserify'], cb);
+  runSequence('clean', ['styles', 'html', 'images', 'copy', 'browserify'], cb);
 });
 
 // 监视源文件变化自动cd编译
@@ -161,7 +154,6 @@ gulp.task('watch', function() {
   gulp.watch('app/**/*.html', ['html']);
   gulp.watch('app/less/**/*less', ['styles']);
   gulp.watch('app/i/**/*', ['images']);
-  //gulp.watch('app/**/*.js', ['eslint']);
 });
 
 // 默认任务
