@@ -73,6 +73,7 @@
     ]
   },
   "dependencies": {
+    "whatwg-fetch": "^1.0.0",
     "draft-js": "^0.8.1",
     "react-modal": "^1.4.0",
     "react-modal-dialog": "^3.0.2",

@@ -91,7 +91,7 @@ var Bi_ye_dian_li  =  withRouter(React.createClass( {
                 </form>
                 
                 <ModalTrigger
-                modal={<View  title = {this.props.title} api_path='kx' form_data = {this.state.form_data} start_run = {this.state.showModal}/>}
+                modal={<View  title = {this.props.title} api_path='by' form_data = {this.state.form_data} start_run = {this.state.showModal}/>}
                 show={this.state.showModal}
                 onClose={this.close}
                 />

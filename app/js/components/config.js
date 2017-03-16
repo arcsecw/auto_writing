@@ -1,8 +1,10 @@
 export const myConfig ={
     des:'站点基本信息',
-    footer:'数字文化传播北京市重点实验室-内部项目-做一个一丝不苟的人^_^',
+    footer:'首都师范大学语言智能研究中心-数字文化传播北京市重点实验室',
     brand:'汉语智能写作项目',
-    fetch_url:'http://139.129.58.131:3005/',
+    //fetch_url:'http://139.129.58.131:3005',
+    fetch_url:'http://localhost:3005',
+    client_id:'7euPdadbHrzme3hivUTC75VNJqgWEKWtTHZCfdit',
     pages:[
         {
             des:'教育公文智能写作',

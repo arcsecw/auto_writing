@@ -4,8 +4,10 @@ import {
   Modal,
   Button,
   Icon,
+  Form,
+  Input
 } from 'amazeui-react';
-import {m_post} from './Call'
+import {post} from './Call'
 
 import {Editor, EditorState,RichUtils,ContentState} from 'draft-js';
 class RichEditorExample extends React.Component {
@@ -18,7 +20,6 @@ class RichEditorExample extends React.Component {
     //this.onChange = (editorState) => this.setState({editorState});
     this.onChange = (editorState)=>{
       this.setState({editorState})
-      console.log(editorState)
     }
     this.handleKeyCommand = (command) => this._handleKeyCommand(command);
     this.onTab = (e) => this._onTab(e);
@@ -58,7 +59,9 @@ class RichEditorExample extends React.Component {
       )
     );
   }
-
+  componentWillReceiveProps(props) {
+    this.setState({editorState: EditorState.createWithContent(ContentState.createFromText(props.tre))})
+}
   render() {
     const {editorState} = this.state;
 
@@ -205,11 +208,12 @@ var View = React.createClass({
   getInitialState(){
     return{
         loading:true,
-        tre:''
+        tre:'',
+        mailto:''
     }
   },
   start_run(){
-    m_post(this.props.api_path,this.props.form_data,(re)=>{
+    post(this.props.api_path,this.props.form_data,(re)=>{
       this.setState({tre:re.r,loading:false}) 
     })
   },
@@ -227,6 +231,14 @@ var View = React.createClass({
     return (
       <Modal {...this.props} type={type} title = {title}>
           {content}
+          <Form inline>  
+         <Button onClick = {()=>{this.start_run()}} standalone algin = 'left' >重新生成</Button>   
+         &nbsp;
+                   
+        <Input addonBefore="@" placeholder="Email" algin = 'right' defaultValue={this.state.mailto}  onChange = {(e)=>{this.setState({mailto:e.target.value})}}type="text"/>
+         <Button standalone href = {'mailto:'+this.state.mailto+'?subject='+title+'&body='+encodeURI(this.state.tre)} algin = 'right' >转发到邮箱</Button> 
+            
+          </Form>
       </Modal>);
   }
 });

@@ -18,7 +18,7 @@ var Zhu_shou_ci  =  withRouter(React.createClass( {
         return {
                 parms:{
                 type:'zs',
-                'xingbie':'女性',
+                'xingbie':'男性',
                 'shenfen':'主持人',
                 'bf':'皇叔',
                 'nl':'七十',
@@ -94,19 +94,19 @@ var Zhu_shou_ci  =  withRouter(React.createClass( {
                 <FormGroup>
                     <label>你的性别是？</label>
                     <Input type="radio" name="xingbie" label="男性" inline onClick = {(e)=>{parms.xingbie = '男性' ;this.setState({parms:parms})}} />
-                    <Input type="radio" name="xingbie" label="女性" inline onClick = {(e)=>{parms.xingbie = '女性' ;this.setState({parms:parms})}} checked="checked"/>
+                    <Input type="radio" name="xingbie" label="女性" inline onClick = {(e)=>{parms.xingbie = '女性' ;this.setState({parms:parms})}} />
                 </FormGroup>
                 <FormGroup>
                     <label>寿宴举办的季节？</label>
                     <Input type="radio" name="jj" label="春天" inline onClick = {(e)=>{parms.jj = '春天' ;this.setState({parms:parms})}} />
                     <Input type="radio" name="jj" label="夏天" inline onClick = {(e)=>{parms.jj = '夏天' ;this.setState({parms:parms})}}/>
-                    <Input type="radio" name="jj" label="秋天" inline onClick = {(e)=>{parms.jj = '秋天' ;this.setState({parms:parms})}}checked="checked"/>
+                    <Input type="radio" name="jj" label="秋天" inline onClick = {(e)=>{parms.jj = '秋天' ;this.setState({parms:parms})}}/>
                     <Input type="radio" name="jj" label="冬天" inline onClick = {(e)=>{parms.jj = '冬天' ;this.setState({parms:parms})}}/>
                 </FormGroup>
                 <FormGroup>
                     <label>你以什么身份参加本次活动？</label>
                     <Input type="radio" name="shenfen" label="晚辈" inline onClick = {(e)=>{parms.shenfen = '晚辈' ;this.setState({parms:parms})}}/>
-                    <Input type="radio" name="shenfen" label="主持人" inline onClick = {(e)=>{parms.shenfen = '主持人' ;this.setState({parms:parms})}} checked="checked"/>
+                    <Input type="radio" name="shenfen" label="主持人" inline onClick = {(e)=>{parms.shenfen = '主持人' ;this.setState({parms:parms})}} />
                 </FormGroup>
                     <Input addonBefore={iconUser} addonAfter='必填' type="text" name="bf" label = '你如何尊称寿星？' inline  defaultValue={parms.bf}  onChange = {(e)=>{parms.bf = e.target.value ;this.setState({parms:parms})}} validation = {this.is_good(parms.bf)} />
                     <Input addonBefore={iconUser} addonAfter='必填' type="text" name="nl" label = {'你的《'+parms.bf+'》过多少大寿'} inline  defaultValue={parms['nl']} onChange = {(e)=>{parms.bf = e.target.value ;this.setState({parms:parms})}}  validation = {this.is_good(parms.nl)} />

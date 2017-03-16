@@ -9,6 +9,8 @@ import {
   hashHistory,
 } from 'react-router';
 
+import 'whatwg-fetch'
+
 import {
   Topbar,
   Nav,
@@ -39,6 +41,11 @@ class App extends Component {
           <CollapsibleNav eventKey="nav">
             <Nav topbar>
               {routeLinks}
+              {localStorage.refresh_token !=undefined ?(
+              <RouteLink to = '/logout'>退出</RouteLink>
+            ) :(
+              <RouteLink to = '/logout'>登录</RouteLink>            )             
+            }
             </Nav>
           </CollapsibleNav>
         </Topbar>
@@ -51,15 +58,29 @@ class App extends Component {
   }
 }
 
+function requireAuth(nextState, replace) {
+  if (localStorage.refresh_token==undefined){
+    console.log("您无权访问本页面")
+      replace({
+      pathname:'/login',
+      state: { nextPathname: nextState.location.pathname }
+    })
+  }
+  
+}
+
 // Pages
 import Index from './pages/Index';
 import Page1 from './pages/Page1';
-
+import Login from './pages/Login'
+import Logout from './pages/Logout'
 const routes = (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Index} />
-      <Route path="run" component={Page1} />
+      <Route path = '/login' component = {Login}/>
+      <Route path="run" component={Page1} onEnter={requireAuth}/>
+      <Route path = '/logout' component = {Logout}/>
     </Route>
   </Router>
 );

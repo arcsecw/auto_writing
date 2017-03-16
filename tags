@@ -4,20 +4,497 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ALLOWED_EXTENSIONS	api.py	/^ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])$/;"	kind:variable	line:8
-Flask	api.py	/^from flask import Flask, request,Response$/;"	kind:namespace	line:4
-Response	api.py	/^from flask import Flask, request,Response$/;"	kind:namespace	line:4
-UPLOAD_FOLDER	api.py	/^UPLOAD_FOLDER = '.\/'$/;"	kind:variable	line:7
-allowed_file	api.py	/^def allowed_file(filename):$/;"	kind:function	line:20
-api.py	api.py	1;"	kind:file	line:1
-app	api.py	/^app = Flask(__name__)$/;"	kind:variable	line:10
-json	api.py	/^import json$/;"	kind:namespace	line:5
-os	api.py	/^import os$/;"	kind:namespace	line:6
-page_not_found	api.py	/^def page_not_found(e):$/;"	kind:function	line:14
-page_not_found	api.py	/^def page_not_found(e):$/;"	kind:function	line:17
-port_number	api.py	/^        port_number = 3005$/;"	kind:variable	line:52
-port_number	api.py	/^        port_number = int(sys.argv[1])$/;"	kind:variable	line:50
-request	api.py	/^from flask import Flask, request,Response$/;"	kind:namespace	line:4
-security	api.py	/^from werkzeug import security$/;"	kind:namespace	line:3
-sys	api.py	/^import sys$/;"	kind:namespace	line:2
-testapi	api.py	/^def testapi():$/;"	kind:function	line:25
+Automatic_writing	api/programs/zj_/main.py	/^class Automatic_writing:$/;"	kind:class	line:4
+BasicAuth	api/oauth2.py	/^from eve.auth import BasicAuth$/;"	kind:namespace	line:12
+BearerAuth	api/oauth2.py	/^class BearerAuth(BasicAuth):$/;"	kind:class	line:17
+BearerAuth	api/run.py	/^from oauth2 import BearerAuth$/;"	kind:namespace	line:10
+CORS	api/run.py	/^from flask.ext.cors import CORS, cross_origin$/;"	kind:namespace	line:8
+DOMAIN	api/settings.py	/^DOMAIN = {$/;"	kind:variable	line:84
+Eve	api/run.py	/^from eve import Eve$/;"	kind:namespace	line:9
+Get_text_feature	api/programs/zj_/get_text_feature.py	/^class Get_text_feature:$/;"	kind:class	line:8
+ITEM_METHODS	api/settings.py	/^ITEM_METHODS = ['GET', 'PATCH', 'DELETE']$/;"	kind:variable	line:6
+MONGO_HOST	api/settings.py	/^MONGO_HOST = 'localhost'$/;"	kind:variable	line:1
+MONGO_PORT	api/settings.py	/^MONGO_PORT = 27017$/;"	kind:variable	line:2
+Mate_keyWords	api/programs/zj_/mate_keyWords.py	/^class Mate_keyWords:$/;"	kind:class	line:3
+MySQL	api/programs/zj_/operation_database.py	/^class MySQL:$/;"	kind:class	line:5
+ProxyFix	api/run.py	/^from werkzeug.contrib.fixers import ProxyFix$/;"	kind:namespace	line:244
+RESOURCE_METHODS	api/settings.py	/^RESOURCE_METHODS = ['GET', 'POST', 'DELETE']$/;"	kind:variable	line:3
+ResourceOwnerPasswordCredentials	api/run.py	/^from flask.ext.sentinel import ResourceOwnerPasswordCredentials, oauth$/;"	kind:namespace	line:11
+Response	api/run.py	/^from flask import  request,Response$/;"	kind:namespace	line:13
+SENTINEL_MANAGEMENT_PASSWORD	api/settings.py	/^SENTINEL_MANAGEMENT_PASSWORD = 'xiadan'/;"	kind:variable	line:89
+SENTINEL_MANAGEMENT_USERNAME	api/settings.py	/^SENTINEL_MANAGEMENT_USERNAME = 'xiadan'$/;"	kind:variable	line:88
+StrictRedis	api/oauth2.py	/^from redis import StrictRedis$/;"	kind:namespace	line:14
+TextRank4Keyword	api/programs/zj_/get_text_feature.py	/^from textrank4zh import TextRank4Keyword, TextRank4Sentence$/;"	kind:namespace	line:5
+TextRank4Sentence	api/programs/zj_/get_text_feature.py	/^from textrank4zh import TextRank4Keyword, TextRank4Sentence$/;"	kind:namespace	line:5
+__init__	api/oauth2.py	/^    def __init__(self):$/;"	kind:member	line:21
+__init__	api/programs/dl_/kx.py	/^    def __init__(self):$/;"	kind:member	line:13
+__init__	api/programs/hc_/hl.py	/^    def __init__(self):$/;"	kind:member	line:13
+__init__	api/programs/hc_/zs.py	/^    def __init__(self):$/;"	kind:member	line:13
+__init__	api/programs/sc_/sc.py	/^    def __init__(self):$/;"	kind:member	line:8
+__init__	api/programs/zj_/operation_database.py	/^    def __init__(self):$/;"	kind:member	line:6
+__init__.py	api/programs/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/dl_/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/dl_/models/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/binkepengyou/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/binkepengyou/xinlangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/binkepengyou/xinniangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/fumu/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/fumu/xinlangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/fumu/xinniangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/lingdao/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/lingdao/xinlangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/lingdao/xinniangfang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/xinlang/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models/zhenghunren/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/man/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/man/wanbei/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/man/zhuchi/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/woman/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/woman/wanbei/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/hc_/models1/woman/zhuchi/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/sc_/__init__.py	1;"	kind:file	line:1
+__init__.py	api/programs/zj_/__init__.py	1;"	kind:file	line:1
+a	api/programs/sc_/sc.py	/^    a = []$/;"	kind:variable	line:112
+action	api/programs/zj_/main.py	/^    def action(self,input_key=[]):$/;"	kind:member	line:12
+all_models	api/programs/dl_/kx.py	/^from models import all_models$/;"	kind:namespace	line:8
+all_models	api/programs/dl_/models/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:1
+all_models	api/programs/dl_/models/all_models.py	/^all_models = [$/;"	kind:variable	line:14
+all_models	api/programs/hc_/models/binkepengyou/xinlangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:12
+all_models	api/programs/hc_/models/binkepengyou/xinniangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:12
+all_models	api/programs/hc_/models/fumu/xinlangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:13
+all_models	api/programs/hc_/models/fumu/xinniangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:13
+all_models	api/programs/hc_/models/lingdao/xinlangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:13
+all_models	api/programs/hc_/models/lingdao/xinniangfang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^all_models = [$/;"	kind:variable	line:13
+all_models	api/programs/hc_/models/xinlang/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models/xinlang/all_models.py	/^all_models = [$/;"	kind:variable	line:13
+all_models	api/programs/hc_/models/zhenghunren/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:1
+all_models	api/programs/hc_/models/zhenghunren/all_models.py	/^all_models = [$/;"	kind:variable	line:14
+all_models	api/programs/hc_/models1/man/wanbei/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models1/man/wanbei/all_models.py	/^all_models = [$/;"	kind:variable	line:15
+all_models	api/programs/hc_/models1/man/zhuchi/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models1/man/zhuchi/all_models.py	/^all_models = [$/;"	kind:variable	line:15
+all_models	api/programs/hc_/models1/woman/wanbei/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models1/woman/wanbei/all_models.py	/^all_models = [$/;"	kind:variable	line:15
+all_models	api/programs/hc_/models1/woman/zhuchi/__init__.py	/^from all_models import all_models/;"	kind:namespace	line:8
+all_models	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^all_models = [$/;"	kind:variable	line:15
+all_models.py	api/programs/dl_/models/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/fumu/xinlangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/fumu/xinniangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/xinlang/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models/zhenghunren/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models1/man/wanbei/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models1/man/zhuchi/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models1/woman/wanbei/all_models.py	1;"	kind:file	line:1
+all_models.py	api/programs/hc_/models1/woman/zhuchi/all_models.py	1;"	kind:file	line:1
+app	api/run.py	/^app = Eve(auth=BearerAuth)$/;"	kind:variable	line:16
+au	api/programs/zj_/main.py	/^    au = Automatic_writing()$/;"	kind:variable	line:24
+au	api/programs/zj_/zj.py	/^    au = zj()$/;"	kind:variable	line:25
+authorized	api/oauth2.py	/^    def authorized(self, allowed_roles, resource, method):$/;"	kind:member	line:36
+autoclass	api/programs/sc_/sc.py	/^        from jnius import autoclass$/;"	kind:namespace	line:15
+binke_xinlangfang	api/programs/hc_/models/__init__.py	/^from binkepengyou import xinlangfang as binke_xinlangfang$/;"	kind:namespace	line:2
+binke_xinniangfang	api/programs/hc_/models/__init__.py	/^from binkepengyou import xinniangfang as binke_xinniangfang$/;"	kind:namespace	line:1
+check_auth	api/oauth2.py	/^    def check_auth(self, token, allowed_roles, resource, method):$/;"	kind:member	line:25
+check_keys	api/programs/dl_/kx.py	/^    def check_keys(self):$/;"	kind:member	line:22
+check_keys	api/programs/hc_/hl.py	/^    def check_keys(self):$/;"	kind:member	line:35
+check_keys	api/programs/hc_/zs.py	/^    def check_keys(self):$/;"	kind:member	line:29
+codecs	api/programs/zj_/get_text_feature.py	/^import codecs$/;"	kind:namespace	line:4
+cors	api/run.py	/^cors = CORS(app)$/;"	kind:variable	line:20
+cross_origin	api/run.py	/^from flask.ext.cors import CORS, cross_origin$/;"	kind:namespace	line:8
+date11	api/programs/sc_/qingjiatiao.py	/^date11= "2016.10.1"$/;"	kind:variable	line:16
+date12	api/programs/sc_/qingjiatiao.py	/^date12 = "jsdkj"$/;"	kind:variable	line:17
+date13	api/programs/sc_/qingjiatiao.py	/^date13 = ""$/;"	kind:variable	line:18
+date21	api/programs/sc_/qingjiatiao.py	/^date21 = "2016.10.7"$/;"	kind:variable	line:19
+date22	api/programs/sc_/qingjiatiao.py	/^date22 = "4568"$/;"	kind:variable	line:20
+date23	api/programs/sc_/qingjiatiao.py	/^date23 = "56789"$/;"	kind:variable	line:21
+date31	api/programs/sc_/qingjiatiao.py	/^date31 = "20160930"$/;"	kind:variable	line:24
+date32	api/programs/sc_/qingjiatiao.py	/^date32 = "72899"$/;"	kind:variable	line:25
+date33	api/programs/sc_/qingjiatiao.py	/^date33 = "89902"$/;"	kind:variable	line:26
+department_article	api/programs/zj_/zj.py	/^    department_article=au.generate_a_article(['你好'],1)$/;"	kind:variable	line:28
+fumu_xinlangfang	api/programs/hc_/models/__init__.py	/^from fumu import xinlangfang as fumu_xinlangfang$/;"	kind:namespace	line:5
+fumu_xinniangfang	api/programs/hc_/models/__init__.py	/^from fumu import xinniangfang as fumu_xinniangfang$/;"	kind:namespace	line:4
+gen_qjt	api/programs/sc_/qingjiatiao.py	/^def gen_qjt(Name1,Reason,Date1,Date2,Number,Name2,Date):$/;"	kind:function	line:30
+generate_a_article	api/programs/dl_/kx.py	/^    def generate_a_article(self,keywords):$/;"	kind:member	line:33
+generate_a_article	api/programs/hc_/hl.py	/^    def generate_a_article(self,keywords):$/;"	kind:member	line:45
+generate_a_article	api/programs/hc_/zs.py	/^    def generate_a_article(self,keywords):$/;"	kind:member	line:39
+generate_a_article	api/programs/zj_/zj.py	/^    def generate_a_article(self,input_key=[],type=0):$/;"	kind:member	line:12
+gerenzongjie	api/run.py	/^def gerenzongjie():$/;"	kind:function	line:130
+getCeremony	api/programs/sc_/sc.py	/^    def getCeremony(self,*parm):$/;"	kind:member	line:44
+getCoverLetter	api/programs/sc_/sc.py	/^    def getCoverLetter(self,*parm):$/;"	kind:member	line:26
+getMeeting	api/programs/sc_/sc.py	/^    def getMeeting(self,*parm):$/;"	kind:member	line:62
+getNotice	api/programs/sc_/sc.py	/^    def getNotice(self,*parm):$/;"	kind:member	line:80
+getQjt	api/programs/sc_/sc.py	/^    def getQjt(self,parm ):$/;"	kind:member	line:97
+get_all_keywords	api/programs/zj_/operation_database.py	/^    def get_all_keywords(self,is_department):$/;"	kind:member	line:32
+get_article_by_id	api/programs/zj_/mate_keyWords.py	/^    def get_article_by_id(self,article_id_list):$/;"	kind:member	line:30
+get_article_by_id	api/programs/zj_/operation_database.py	/^    def get_article_by_id(self,article_id):$/;"	kind:member	line:41
+get_mate_atticle	api/programs/zj_/mate_keyWords.py	/^    def get_mate_atticle(self,input_key,is_department):$/;"	kind:member	line:4
+get_text_feature	api/programs/zj_/get_text_feature.py	/^    def get_text_feature(self,file):$/;"	kind:member	line:9
+get_text_feature	api/programs/zj_/get_text_feature.py	/^    get_text_feature=Get_text_feature()$/;"	kind:variable	line:51
+get_text_feature.py	api/programs/zj_/get_text_feature.py	1;"	kind:file	line:1
+getkey	api/programs/zj_/main.py	/^    def getkey(self):$/;"	kind:member	line:5
+getkey	api/programs/zj_/zj.py	/^    def getkey(self):$/;"	kind:member	line:5
+hc_	api/run.py	/^def hc_():$/;"	kind:function	line:67
+hl	api/programs/__init__.py	/^from hc_ import hl$/;"	kind:namespace	line:4
+hl	api/programs/hc_/__init__.py	/^from hl import hl/;"	kind:namespace	line:2
+hl	api/programs/hc_/hl.py	/^class hl :$/;"	kind:class	line:11
+hl	api/run.py	/^from programs import hl$/;"	kind:namespace	line:28
+hl	api/run.py	/^hl = hl()$/;"	kind:variable	line:34
+hl	api/test.py	/^from programs import hl$/;"	kind:namespace	line:16
+hl.py	api/programs/hc_/hl.py	1;"	kind:file	line:1
+insert_feature	api/programs/zj_/operation_database.py	/^    def insert_feature(self,feature):$/;"	kind:member	line:15
+json	api/run.py	/^import json$/;"	kind:namespace	line:12
+kaixue	api/run.py	/^def kaixue():$/;"	kind:function	line:153
+keywords	api/programs/hc_/hl.py	/^    keywords = {$/;"	kind:variable	line:67
+keywords	api/programs/hc_/zs.py	/^    keywords = {$/;"	kind:variable	line:56
+kx	api/programs/__init__.py	/^from dl_ import kx$/;"	kind:namespace	line:1
+kx	api/programs/dl_/__init__.py	/^from kx import kx/;"	kind:namespace	line:1
+kx	api/programs/dl_/kx.py	/^    kx = kx()$/;"	kind:variable	line:48
+kx	api/programs/dl_/kx.py	/^class kx :$/;"	kind:class	line:11
+kx	api/programs/hc_/hl.py	/^    kx = hl()$/;"	kind:variable	line:66
+kx	api/programs/hc_/zs.py	/^    kx = zs()$/;"	kind:variable	line:55
+kx	api/run.py	/^from programs import kx$/;"	kind:namespace	line:25
+kx	api/run.py	/^kx = kx()$/;"	kind:variable	line:31
+kx	api/test.py	/^from programs import kx$/;"	kind:namespace	line:12
+kx.py	api/programs/dl_/kx.py	1;"	kind:file	line:1
+lingdao_xinlangfang	api/programs/hc_/models/__init__.py	/^from lingdao import xinlangfang as lingdao_xinlangfang$/;"	kind:namespace	line:8
+lingdao_xinniangfang	api/programs/hc_/models/__init__.py	/^from lingdao import xinniangfang as lingdao_xinniangfang$/;"	kind:namespace	line:7
+logging	api/programs/sc_/sc.py	/^import logging$/;"	kind:namespace	line:3
+logging	api/programs/zj_/main.py	/^import logging$/;"	kind:namespace	line:3
+logging	api/programs/zj_/operation_database.py	/^import logging$/;"	kind:namespace	line:4
+m	api/programs/sc_/sc.py	/^    m = sc()$/;"	kind:variable	line:113
+main.py	api/programs/zj_/main.py	1;"	kind:file	line:1
+man_wanbei	api/programs/hc_/models1/__init__.py	/^from man import man_wanbei$/;"	kind:namespace	line:1
+man_wanbei	api/programs/hc_/models1/man/__init__.py	/^from wanbei import all_models as man_wanbei$/;"	kind:namespace	line:8
+man_zhuchi	api/programs/hc_/models1/__init__.py	/^from man import man_zhuchi$/;"	kind:namespace	line:2
+man_zhuchi	api/programs/hc_/models1/man/__init__.py	/^from zhuchi import all_models as man_zhuchi/;"	kind:namespace	line:9
+mate_keyWords	api/programs/zj_/main.py	/^import mate_keyWords$/;"	kind:namespace	line:2
+mate_keyWords	api/programs/zj_/zj.py	/^    import mate_keyWords$/;"	kind:namespace	line:4
+mate_keyWords	api/programs/zj_/zj.py	/^import mate_keyWords$/;"	kind:namespace	line:2
+mate_keyWords.py	api/programs/zj_/mate_keyWords.py	1;"	kind:file	line:1
+min_at_len	api/test.py	/^min_at_len = 10*3$/;"	kind:variable	line:19
+model_1	api/programs/dl_/models/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/dl_/models/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/binkepengyou/xinlangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/binkepengyou/xinniangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/fumu/xinlangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/fumu/xinniangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/lingdao/xinlangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/lingdao/xinniangfang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/xinlang/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/xinlang/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models/zhenghunren/model_1.py	/^model_1 = [$/;"	kind:variable	line:13
+model_1	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models1/man/wanbei/model_1.py	/^model_1 = [$/;"	kind:variable	line:20
+model_1	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models1/man/zhuchi/model_1.py	/^model_1 = [$/;"	kind:variable	line:20
+model_1	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models1/woman/wanbei/model_1.py	/^model_1 = [$/;"	kind:variable	line:20
+model_1	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_1 import model_1$/;"	kind:namespace	line:8
+model_1	api/programs/hc_/models1/woman/zhuchi/model_1.py	/^model_1 = [$/;"	kind:variable	line:20
+model_1.py	api/programs/dl_/models/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/binkepengyou/xinlangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/binkepengyou/xinniangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/fumu/xinlangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/fumu/xinniangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/lingdao/xinlangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/lingdao/xinniangfang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/xinlang/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models/zhenghunren/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models1/man/wanbei/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models1/man/zhuchi/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models1/woman/wanbei/model_1.py	1;"	kind:file	line:1
+model_1.py	api/programs/hc_/models1/woman/zhuchi/model_1.py	1;"	kind:file	line:1
+model_2	api/programs/dl_/models/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/dl_/models/model_2.py	/^model_2 = [$/;"	kind:variable	line:15
+model_2	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/binkepengyou/xinlangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:15
+model_2	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/binkepengyou/xinniangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:16
+model_2	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/fumu/xinlangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/fumu/xinniangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/lingdao/xinlangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/lingdao/xinniangfang/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models/xinlang/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/xinlang/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models/zhenghunren/model_2.py	/^model_2 = [$/;"	kind:variable	line:14
+model_2	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models1/man/wanbei/model_2.py	/^model_2 = [$/;"	kind:variable	line:20
+model_2	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models1/man/zhuchi/model_2.py	/^model_2 = [$/;"	kind:variable	line:20
+model_2	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models1/woman/wanbei/model_2.py	/^model_2 = [$/;"	kind:variable	line:20
+model_2	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_2 import model_2$/;"	kind:namespace	line:9
+model_2	api/programs/hc_/models1/woman/zhuchi/model_2.py	/^model_2 = [$/;"	kind:variable	line:20
+model_2.py	api/programs/dl_/models/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/binkepengyou/xinlangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/binkepengyou/xinniangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/fumu/xinlangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/fumu/xinniangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/lingdao/xinlangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/lingdao/xinniangfang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/xinlang/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models/zhenghunren/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models1/man/wanbei/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models1/man/zhuchi/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models1/woman/wanbei/model_2.py	1;"	kind:file	line:1
+model_2.py	api/programs/hc_/models1/woman/zhuchi/model_2.py	1;"	kind:file	line:1
+model_3	api/programs/dl_/models/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/dl_/models/model_3.py	/^model_3 = [$/;"	kind:variable	line:13
+model_3	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/binkepengyou/xinlangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:13
+model_3	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/binkepengyou/xinniangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:13
+model_3	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/fumu/xinlangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:14
+model_3	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/fumu/xinniangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:14
+model_3	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/lingdao/xinlangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:14
+model_3	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/lingdao/xinniangfang/model_3.py	/^model_3 = [$/;"	kind:variable	line:14
+model_3	api/programs/hc_/models/xinlang/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/xinlang/model_3.py	/^model_3 = [$/;"	kind:variable	line:14
+model_3	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models/zhenghunren/model_3.py	/^model_3 = [$/;"	kind:variable	line:12
+model_3	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models1/man/wanbei/model_3.py	/^model_3 = [$/;"	kind:variable	line:20
+model_3	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models1/man/zhuchi/model_3.py	/^model_3 = [$/;"	kind:variable	line:20
+model_3	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models1/woman/wanbei/model_3.py	/^model_3 = [$/;"	kind:variable	line:20
+model_3	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_3 import model_3$/;"	kind:namespace	line:10
+model_3	api/programs/hc_/models1/woman/zhuchi/model_3.py	/^model_3 = [$/;"	kind:variable	line:20
+model_3.py	api/programs/dl_/models/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/binkepengyou/xinlangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/binkepengyou/xinniangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/fumu/xinlangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/fumu/xinniangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/lingdao/xinlangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/lingdao/xinniangfang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/xinlang/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models/zhenghunren/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models1/man/wanbei/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models1/man/zhuchi/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models1/woman/wanbei/model_3.py	1;"	kind:file	line:1
+model_3.py	api/programs/hc_/models1/woman/zhuchi/model_3.py	1;"	kind:file	line:1
+model_4	api/programs/dl_/models/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/dl_/models/model_4.py	/^model_4 = [$/;"	kind:variable	line:12
+model_4	api/programs/hc_/models/binkepengyou/xinlangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/binkepengyou/xinlangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:13
+model_4	api/programs/hc_/models/binkepengyou/xinniangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/binkepengyou/xinniangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:13
+model_4	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/fumu/xinlangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:16
+model_4	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/fumu/xinniangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:14
+model_4	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/lingdao/xinlangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:16
+model_4	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/lingdao/xinniangfang/model_4.py	/^model_4 = [$/;"	kind:variable	line:17
+model_4	api/programs/hc_/models/xinlang/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/xinlang/model_4.py	/^model_4 = [$/;"	kind:variable	line:14
+model_4	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models/zhenghunren/model_4.py	/^model_4 = [$/;"	kind:variable	line:13
+model_4	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models1/man/wanbei/model_4.py	/^model_4 = [$/;"	kind:variable	line:20
+model_4	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models1/man/zhuchi/model_4.py	/^model_4 = [$/;"	kind:variable	line:20
+model_4	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models1/woman/wanbei/model_4.py	/^model_4 = [$/;"	kind:variable	line:20
+model_4	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_4 import model_4$/;"	kind:namespace	line:11
+model_4	api/programs/hc_/models1/woman/zhuchi/model_4.py	/^model_4 = [$/;"	kind:variable	line:20
+model_4.py	api/programs/dl_/models/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/binkepengyou/xinlangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/binkepengyou/xinniangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/fumu/xinlangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/fumu/xinniangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/lingdao/xinlangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/lingdao/xinniangfang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/xinlang/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models/zhenghunren/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models1/man/wanbei/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models1/man/zhuchi/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models1/woman/wanbei/model_4.py	1;"	kind:file	line:1
+model_4.py	api/programs/hc_/models1/woman/zhuchi/model_4.py	1;"	kind:file	line:1
+model_5	api/programs/dl_/models/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/dl_/models/model_5.py	/^model_5 = [$/;"	kind:variable	line:12
+model_5	api/programs/hc_/models/fumu/xinlangfang/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:12
+model_5	api/programs/hc_/models/fumu/xinlangfang/model_5.py	/^model_5 = [$/;"	kind:variable	line:14
+model_5	api/programs/hc_/models/fumu/xinniangfang/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:12
+model_5	api/programs/hc_/models/fumu/xinniangfang/model_5.py	/^model_5 = [$/;"	kind:variable	line:14
+model_5	api/programs/hc_/models/lingdao/xinlangfang/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:12
+model_5	api/programs/hc_/models/lingdao/xinlangfang/model_5.py	/^model_5 = [$/;"	kind:variable	line:14
+model_5	api/programs/hc_/models/lingdao/xinniangfang/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:12
+model_5	api/programs/hc_/models/lingdao/xinniangfang/model_5.py	/^model_5 = [$/;"	kind:variable	line:14
+model_5	api/programs/hc_/models/xinlang/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:12
+model_5	api/programs/hc_/models/xinlang/model_5.py	/^model_5 = [$/;"	kind:variable	line:13
+model_5	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/hc_/models/zhenghunren/model_5.py	/^model_5 = [$/;"	kind:variable	line:12
+model_5	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/hc_/models1/man/wanbei/model_5.py	/^model_5 = [$/;"	kind:variable	line:20
+model_5	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/hc_/models1/man/zhuchi/model_5.py	/^model_5 = [$/;"	kind:variable	line:20
+model_5	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/hc_/models1/woman/wanbei/model_5.py	/^model_5 = [$/;"	kind:variable	line:20
+model_5	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_5 import model_5$/;"	kind:namespace	line:13
+model_5	api/programs/hc_/models1/woman/zhuchi/model_5.py	/^model_5 = [$/;"	kind:variable	line:20
+model_5.py	api/programs/dl_/models/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/fumu/xinlangfang/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/fumu/xinniangfang/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/lingdao/xinlangfang/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/lingdao/xinniangfang/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/xinlang/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models/zhenghunren/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models1/man/wanbei/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models1/man/zhuchi/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models1/woman/wanbei/model_5.py	1;"	kind:file	line:1
+model_5.py	api/programs/hc_/models1/woman/zhuchi/model_5.py	1;"	kind:file	line:1
+model_6	api/programs/dl_/models/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/dl_/models/model_6.py	/^model_6 = [$/;"	kind:variable	line:12
+model_6	api/programs/hc_/models/zhenghunren/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/hc_/models/zhenghunren/model_6.py	/^model_6 = [$/;"	kind:variable	line:11
+model_6	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/hc_/models1/man/wanbei/model_6.py	/^model_6 = [$/;"	kind:variable	line:20
+model_6	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/hc_/models1/man/zhuchi/model_6.py	/^model_6 = [$/;"	kind:variable	line:20
+model_6	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/hc_/models1/woman/wanbei/model_6.py	/^model_6 = [$/;"	kind:variable	line:20
+model_6	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_6 import model_6$/;"	kind:namespace	line:12
+model_6	api/programs/hc_/models1/woman/zhuchi/model_6.py	/^model_6 = [$/;"	kind:variable	line:20
+model_6.py	api/programs/dl_/models/model_6.py	1;"	kind:file	line:1
+model_6.py	api/programs/hc_/models/zhenghunren/model_6.py	1;"	kind:file	line:1
+model_6.py	api/programs/hc_/models1/man/wanbei/model_6.py	1;"	kind:file	line:1
+model_6.py	api/programs/hc_/models1/man/zhuchi/model_6.py	1;"	kind:file	line:1
+model_6.py	api/programs/hc_/models1/woman/wanbei/model_6.py	1;"	kind:file	line:1
+model_6.py	api/programs/hc_/models1/woman/zhuchi/model_6.py	1;"	kind:file	line:1
+model_7	api/programs/hc_/models1/man/wanbei/all_models.py	/^from model_7 import model_7$/;"	kind:namespace	line:14
+model_7	api/programs/hc_/models1/man/wanbei/model_7.py	/^model_7 = [$/;"	kind:variable	line:20
+model_7	api/programs/hc_/models1/man/zhuchi/all_models.py	/^from model_7 import model_7$/;"	kind:namespace	line:14
+model_7	api/programs/hc_/models1/man/zhuchi/model_7.py	/^model_7 = [$/;"	kind:variable	line:20
+model_7	api/programs/hc_/models1/woman/wanbei/all_models.py	/^from model_7 import model_7$/;"	kind:namespace	line:14
+model_7	api/programs/hc_/models1/woman/wanbei/model_7.py	/^model_7 = [$/;"	kind:variable	line:20
+model_7	api/programs/hc_/models1/woman/zhuchi/all_models.py	/^from model_7 import model_7$/;"	kind:namespace	line:14
+model_7	api/programs/hc_/models1/woman/zhuchi/model_7.py	/^model_7 = [$/;"	kind:variable	line:20
+model_7.py	api/programs/hc_/models1/man/wanbei/model_7.py	1;"	kind:file	line:1
+model_7.py	api/programs/hc_/models1/man/zhuchi/model_7.py	1;"	kind:file	line:1
+model_7.py	api/programs/hc_/models1/woman/wanbei/model_7.py	1;"	kind:file	line:1
+model_7.py	api/programs/hc_/models1/woman/zhuchi/model_7.py	1;"	kind:file	line:1
+models1	api/programs/hc_/zs.py	/^import models1$/;"	kind:namespace	line:8
+mytest	api/test.py	/^class mytest(unittest.TestCase):$/;"	kind:class	line:21
+name1	api/programs/sc_/qingjiatiao.py	/^name1 = "zxj"$/;"	kind:variable	line:14
+name2	api/programs/sc_/qingjiatiao.py	/^name2 = "朱星嘉"$/;"	kind:variable	line:23
+number	api/programs/sc_/qingjiatiao.py	/^number = "7"$/;"	kind:variable	line:22
+oauth	api/run.py	/^from flask.ext.sentinel import ResourceOwnerPasswordCredentials, oauth$/;"	kind:namespace	line:11
+oauth2.py	api/oauth2.py	1;"	kind:file	line:1
+operation_database	api/programs/zj_/get_text_feature.py	/^import operation_database$/;"	kind:namespace	line:3
+operation_database	api/programs/zj_/mate_keyWords.py	/^import operation_database,operator,random,time$/;"	kind:namespace	line:2
+operation_database.py	api/programs/zj_/operation_database.py	1;"	kind:file	line:1
+operator	api/programs/zj_/mate_keyWords.py	/^import operation_database,operator,random,time$/;"	kind:namespace	line:2
+orders	api/settings.py	/^orders = {$/;"	kind:variable	line:12
+os	api/programs/sc_/sc.py	/^import os$/;"	kind:namespace	line:2
+os	api/programs/zj_/get_text_feature.py	/^import os$/;"	kind:namespace	line:7
+os	api/programs/zj_/operation_database.py	/^import os$/;"	kind:namespace	line:3
+page_not_found	api/run.py	/^def page_not_found(e):$/;"	kind:function	line:39
+page_not_found	api/run.py	/^def page_not_found(e):$/;"	kind:function	line:43
+path	api/programs/zj_/get_text_feature.py	/^    path=os.getcwd()+'\\\\file'$/;"	kind:variable	line:52
+print_function	api/programs/zj_/get_text_feature.py	/^from __future__ import print_function$/;"	kind:namespace	line:2
+private_article	api/programs/zj_/zj.py	/^    private_article=au.generate_a_article(['你好'])$/;"	kind:variable	line:26
+qingjiatiao.py	api/programs/sc_/qingjiatiao.py	1;"	kind:file	line:1
+query_order	api/settings.py	/^query_order = {$/;"	kind:variable	line:51
+random	api/programs/sc_/qingjiatiao.py	/^    import random$/;"	kind:namespace	line:32
+random	api/programs/sc_/sc.py	/^import random$/;"	kind:namespace	line:4
+random	api/programs/zj_/mate_keyWords.py	/^import operation_database,operator,random,time$/;"	kind:namespace	line:2
+regenerateCeremony	api/programs/sc_/sc.py	/^    def regenerateCeremony(self):$/;"	kind:member	line:53
+regenerateCoverLetter	api/programs/sc_/sc.py	/^    def regenerateCoverLetter(self):$/;"	kind:member	line:35
+regenerateMeeting	api/programs/sc_/sc.py	/^    def regenerateMeeting(self):$/;"	kind:member	line:71
+regenerateNotice	api/programs/sc_/sc.py	/^    def regenerateNotice(self):$/;"	kind:member	line:88
+request	api/oauth2.py	/^from flask import request$/;"	kind:namespace	line:13
+request	api/run.py	/^from flask import  request,Response$/;"	kind:namespace	line:13
+run.py	api/run.py	1;"	kind:file	line:1
+sample	api/programs/dl_/kx.py	/^from random import sample$/;"	kind:namespace	line:9
+sample	api/programs/hc_/hl.py	/^from random import sample$/;"	kind:namespace	line:9
+sample	api/programs/hc_/zs.py	/^from random import sample$/;"	kind:namespace	line:9
+sc	api/programs/__init__.py	/^from sc_ import sc$/;"	kind:namespace	line:3
+sc	api/programs/sc_/__init__.py	/^from sc import sc/;"	kind:namespace	line:1
+sc	api/programs/sc_/sc.py	/^class sc:$/;"	kind:class	line:6
+sc	api/run.py	/^from programs import sc$/;"	kind:namespace	line:26
+sc	api/run.py	/^sc = sc()$/;"	kind:variable	line:32
+sc	api/test.py	/^from programs import sc$/;"	kind:namespace	line:13
+sc.py	api/programs/sc_/sc.py	1;"	kind:file	line:1
+setUp	api/test.py	/^    def setUp(self):$/;"	kind:member	line:24
+settings.py	api/settings.py	1;"	kind:file	line:1
+short_content	api/run.py	/^def short_content():$/;"	kind:function	line:173
+sqlite3	api/programs/zj_/operation_database.py	/^import sqlite3,time$/;"	kind:namespace	line:2
+sys	api/programs/zj_/get_text_feature.py	/^import sys$/;"	kind:namespace	line:6
+tearDown	api/test.py	/^    def tearDown(self):$/;"	kind:member	line:32
+test	api/run.py	/^def test():$/;"	kind:function	line:59
+test.py	api/test.py	1;"	kind:file	line:1
+testawgenerate_a_article	api/test.py	/^    def testawgenerate_a_article(self):$/;"	kind:member	line:111
+testgenerate_a_article	api/test.py	/^    def testgenerate_a_article(self):$/;"	kind:member	line:36
+testgetCeremony	api/test.py	/^    def testgetCeremony(self):$/;"	kind:member	line:66
+testgetCoverLetter	api/test.py	/^    def testgetCoverLetter(self):$/;"	kind:member	line:76
+testgetMeeting	api/test.py	/^    def testgetMeeting(self):$/;"	kind:member	line:88
+testgetNotice	api/test.py	/^    def testgetNotice(self):$/;"	kind:member	line:53
+testhlgenerate_a_article	api/test.py	/^    def testhlgenerate_a_article(self):$/;"	kind:member	line:42
+testqjt	api/test.py	/^    def testqjt(self):$/;"	kind:member	line:97
+testregenerateCeremony	api/test.py	/^    def testregenerateCeremony(self):$/;"	kind:member	line:71
+testregenerateCoverLetter	api/test.py	/^    def testregenerateCoverLetter(self):$/;"	kind:member	line:83
+testregenerateMeeting	api/test.py	/^    def testregenerateMeeting(self):$/;"	kind:member	line:93
+testregenerateNotice	api/test.py	/^    def testregenerateNotice(self):$/;"	kind:member	line:61
+testzsgenerate_a_article	api/test.py	/^    def testzsgenerate_a_article(self):$/;"	kind:member	line:47
+time	api/programs/zj_/mate_keyWords.py	/^import operation_database,operator,random,time$/;"	kind:namespace	line:2
+time	api/programs/zj_/operation_database.py	/^import sqlite3,time$/;"	kind:namespace	line:2
+unittest	api/test.py	/^import unittest$/;"	kind:namespace	line:11
+welcome	api/run.py	/^def welcome():$/;"	kind:function	line:49
+woman_wanbei	api/programs/hc_/models1/__init__.py	/^from woman import woman_wanbei$/;"	kind:namespace	line:3
+woman_wanbei	api/programs/hc_/models1/woman/__init__.py	/^from wanbei import all_models as woman_wanbei$/;"	kind:namespace	line:8
+woman_zhuchi	api/programs/hc_/models1/__init__.py	/^from woman import woman_zhuchi/;"	kind:namespace	line:4
+woman_zhuchi	api/programs/hc_/models1/woman/__init__.py	/^from zhuchi import all_models as woman_zhuchi/;"	kind:namespace	line:9
+xinlang	api/programs/hc_/models/__init__.py	/^from xinlang import all_models as xinlang$/;"	kind:namespace	line:10
+xinlangfang	api/programs/hc_/models/binkepengyou/__init__.py	/^from xinlangfang import all_models as xinlangfang$/;"	kind:namespace	line:8
+xinlangfang	api/programs/hc_/models/fumu/__init__.py	/^from xinlangfang import all_models as xinlangfang$/;"	kind:namespace	line:8
+xinlangfang	api/programs/hc_/models/lingdao/__init__.py	/^from xinlangfang import all_models as xinlangfang$/;"	kind:namespace	line:8
+xinniangfang	api/programs/hc_/models/binkepengyou/__init__.py	/^from xinniangfang import all_models as xinniangfang/;"	kind:namespace	line:9
+xinniangfang	api/programs/hc_/models/fumu/__init__.py	/^from xinniangfang import all_models as xinniangfang/;"	kind:namespace	line:9
+xinniangfang	api/programs/hc_/models/lingdao/__init__.py	/^from xinniangfang import all_models as xinniangfang/;"	kind:namespace	line:9
+yuanyin	api/programs/sc_/qingjiatiao.py	/^yuanyin ="hsahakjhajlk"$/;"	kind:variable	line:15
+zhenghunren	api/programs/hc_/models/__init__.py	/^from zhenghunren import  all_models as zhenghunren/;"	kind:namespace	line:12
+zj	api/programs/__init__.py	/^from zj_ import zj$/;"	kind:namespace	line:2
+zj	api/programs/zj_/__init__.py	/^from zj import zj/;"	kind:namespace	line:1
+zj	api/programs/zj_/zj.py	/^class zj:$/;"	kind:class	line:3
+zj	api/run.py	/^from programs import zj$/;"	kind:namespace	line:27
+zj	api/run.py	/^zj = zj()$/;"	kind:variable	line:33
+zj	api/test.py	/^from programs import zj$/;"	kind:namespace	line:14
+zj.py	api/programs/zj_/zj.py	1;"	kind:file	line:1
+zongjie	api/run.py	/^def zongjie():$/;"	kind:function	line:108
+zs	api/programs/__init__.py	/^from hc_ import zs/;"	kind:namespace	line:5
+zs	api/programs/hc_/__init__.py	/^from zs import zs$/;"	kind:namespace	line:1
+zs	api/programs/hc_/zs.py	/^class zs :$/;"	kind:class	line:11
+zs	api/run.py	/^from programs import zs$/;"	kind:namespace	line:29
+zs	api/run.py	/^zs = zs()$/;"	kind:variable	line:35
+zs	api/test.py	/^from programs import zs$/;"	kind:namespace	line:15
+zs.py	api/programs/hc_/zs.py	1;"	kind:file	line:1
