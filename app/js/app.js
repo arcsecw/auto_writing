@@ -41,11 +41,7 @@ class App extends Component {
           <CollapsibleNav eventKey="nav">
             <Nav topbar>
               {routeLinks}
-              {localStorage.refresh_token !=undefined ?(
-              <RouteLink to = '/logout'>退出</RouteLink>
-            ) :(
-              <RouteLink to = '/logout'>登录</RouteLink>            )             
-            }
+              
             </Nav>
           </CollapsibleNav>
         </Topbar>
@@ -79,7 +75,7 @@ const routes = (
     <Route path="/" component={App}>
       <IndexRoute component={Index} />
       <Route path = '/login' component = {Login}/>
-      <Route path="run" component={Page1} onEnter={requireAuth}/>
+      <Route path="run" component={Page1} />
       <Route path = '/logout' component = {Logout}/>
     </Route>
   </Router>

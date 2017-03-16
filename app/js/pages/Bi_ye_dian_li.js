@@ -19,14 +19,14 @@ var Bi_ye_dian_li  =  withRouter(React.createClass( {
     getInitialState(){
         return {
                parms:{
-                p1:'北信科',  
-                p2:'北京信息科技大学',
+                p1:'首师大',  
+                p2:'首都师范大学',
                 p3:'北京',
                 p4:'上午',
-                p5:'2016-10-1',
-                p6:'刘备',
-                p7:'本校办学历史悠久...',
-                p8:'秋天',
+                p5:'2017-6-15',
+                p6:'周校长',
+                p7:'本校办学历史悠久，科研成果显著',
+                p8:'夏天',
                 },
                 form_data:{},
                 showModal: false,

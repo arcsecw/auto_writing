@@ -20,7 +20,7 @@ var Bu_men_zong_jie  =  withRouter(React.createClass( {
                 p1:'语文教研室',
                 p2:'办公室主任',
                 p3:'计算机科学与技术',
-                p4:'张飞',
+                p4:'张老师',
                 },
                 form_data:{},
                 showModal: false,
